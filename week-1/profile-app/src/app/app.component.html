@@ -1,0 +1,36 @@
+<!--
+Title: app.component.html
+Author: Zadkiel Rodriguez Alvarado
+Date: 3/17/2024
+Description: App html code
+Reference:
+  https://getbootstrap.com/docs/5.3/components/navbar/
+-->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <br /> <br />
+  <h2 class="text-center">{{ assignment }}</h2>
+  <br />
+  <div class="row justify-content-evenly">
+    <div class="col-sm-4">
+      <app-my-image></app-my-image>
+    </div>
+    <div class="col-sm-4">
+      <app-my-details></app-my-details>
+    </div>
+  </div>
+</div>
