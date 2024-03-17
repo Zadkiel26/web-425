@@ -1,3 +1,10 @@
+/**
+ * Title: app.components.ts
+ * Author: Zadkiel Rodriguez Alvarado
+ * Date: 3/17/2024
+ * Description: App typescript file
+ */
+
 import { Component } from '@angular/core';
 
 @Component({
