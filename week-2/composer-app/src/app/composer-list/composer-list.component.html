@@ -1,0 +1,27 @@
+<!--
+  Title: composer-list.component.html
+  Author: Zadkiel Rodriguez Alvarado
+  Date: 3/30/2024
+  Description: Composer-list component html file
+-->
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Full Name</th>
+            <th>Genre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let composer of composers">
+            <td>{{ composer.fullName }}</td>
+            <td>{{ composer.genre }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
