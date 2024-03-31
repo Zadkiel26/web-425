@@ -1,3 +1,9 @@
+/**
+ * Title: app-routing.module.ts
+ * Date: 3/25/2024
+ * Author: Zadkiel Rodriguez Alvarado
+ * Description: Routing for different components
+ */
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
