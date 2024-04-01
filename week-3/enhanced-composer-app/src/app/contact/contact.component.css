@@ -1,0 +1,11 @@
+/*
+  Title: contact.component.css
+  Author: Zadkiel Rodriguez Alvarado
+  Date: 3/30/2024
+  Description: Contact component css file
+*/
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.container {
+  width: 100%;
+}
