@@ -1,0 +1,15 @@
+/*
+ * Title: sign-in.component.css
+ * Author: Zadkiel Rodriguez Alvarado
+ * Date: 4/4/2024
+ * Description: Sign in styling
+ */
+.sign-in-container {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.float-right {
+  float: right;
+}

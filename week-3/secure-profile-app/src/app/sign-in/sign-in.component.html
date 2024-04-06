@@ -1,0 +1,28 @@
+<!--
+  Title: sign-in.component.html
+  Author: Zadkiel Rodriguez Alvarado
+  Date: 4/4/2024
+  Description: Sign in html
+-->
+<div class="card sign-in-container">
+  <div class="card-body">
+    <h3 class="card-title">Sign in</h3>
+
+    <form class="card-text">
+      <br>
+      <div class="form-group">
+        <label for="txtUserName">Username</label>
+        <input type="text" id="txtUserName" class="form-control" placeholder="Enter your username">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="txtPassword">Password</label>
+        <input type="password" id="txtPassword" class="form-control" placeholder="Enter your password">
+      </div>
+      <br>
+      <div class="form-group">
+        <button class="btn btn-primary float-right" (click)="signin()">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
