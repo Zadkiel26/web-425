@@ -1,0 +1,24 @@
+<!--
+  Title: book-detail-dialog.component.html
+  Author: Zadkiel Rodriguez Alvarado
+  Date: 4/20/2024
+  Description: Book detail dialog component html
+-->
+<mat-card class="mat-elevation-z15">
+  <mat-card-title class="blue">{{ book.title }}</mat-card-title>
+  <br>
+  <mat-card-content>
+    <div fxLayout="column">
+      <br>
+      <p>ISBN: {{book.isbn}}</p>
+      <br>
+      <p>Description: {{book.description}}</p>
+      <br>
+      <p>Authors: {{book.authors.join(', ')}}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+    <br>
+  </mat-card-actions>
+</mat-card>
