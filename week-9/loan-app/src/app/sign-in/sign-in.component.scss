@@ -1,0 +1,39 @@
+/*
+  Title: sign-in.component.scss
+  Author: Zadkiel Rodriguez Alvarado
+  Date: 5/11/2024
+  Description: Sing in styling
+*/
+.logo {
+  padding-left: 70px;
+}
+
+.sign-in-container {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.card-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #000;
+  padding: 20px;
+}
+
+.card-subtitle {
+  font-style: italic;
+  padding: 5px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.message-error {
+  margin: 10px 0;
+  padding: 12px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+.sign-in-container > mat-card-title, mat-card-subtitle {
+  text-align: center;
+}

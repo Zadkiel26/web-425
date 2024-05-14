@@ -1,0 +1,81 @@
+/*
+  Title: styles.scss
+  Author: Zadkiel Rodriguez Alvarado
+  Date: 5/10/2024
+  Description: App styling
+*/
+/* You can add global styles to this file, and also import other style files */
+@import './theme';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+
+.red {
+  color: #E53935;
+}
+
+.orange {
+  color: #FB8C00;
+}
+
+.logo {
+  width: 500px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px black;
+  padding: 20px;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  padding: 10px;
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: white;
+}
+
+.attribution-link:hover {
+  text-decoration: underline;
+}
+
+hr {
+  width: 100%;
+  height: 1.5px;
+  background-color: #000;
+  border: none;
+}

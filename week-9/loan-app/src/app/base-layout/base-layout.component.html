@@ -1,0 +1,25 @@
+<!--
+  Title: base-layout.component.html
+  Author: Zadkiel Rodriguez Alvarado
+  Date: 5/10/2024
+  Description: Base layout component html
+-->
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div style="width: 100%;">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/">Home</button>
+        <button mat-button routerLink="/loan">Loans</button>
+        <button mat-button routerLink="/about">About</button>
+        <button mat-button routerLink="/contact">Contact Us</button>
+        <button mat-button (click)="logOut()">Log Out</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <router-outlet></router-outlet>
+  </div>
+</div>

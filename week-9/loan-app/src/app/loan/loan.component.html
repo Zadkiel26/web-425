@@ -1,0 +1,77 @@
+<!--
+  Title: loan.component.html
+  Author: Zadkiel Rodriguez Alvarado
+  Date: 5/13/2024
+  Description: Loan component html
+-->
+<br><br>
+<mat-card class="main-container">
+
+  <mat-card-title class="title text-center red">Welcome to GryffinBank Loan Calculator!</mat-card-title>
+  <br>
+
+  <hr>
+
+  <br><br>
+
+  <div fxLayout="row wrap" fxLayoutGap="24px">
+
+    <div fxFlex class="calculator-form">
+
+      <mat-card class="mat-elevation-z8">
+
+        <mat-card-content>
+
+
+          <form fxLayout="column" fxLayoutGap="16px" [formGroup]="loanForm">
+            <mat-label class="label red">Loan Amount:</mat-label>
+
+            <mat-form-field fxFlex appearance="fill">
+              <mat-label>Loan Amount</mat-label>
+              <input type="number" name="txtLoanAmount" required id="txtLoanAmount" #loanAmount matInput formControlName="loanAmount" />
+            </mat-form-field>
+
+            <mat-label class="label red">Interest Rate (ex: 4.5):</mat-label>
+
+            <mat-form-field fxFlex appearance="fill">
+              <mat-label>Interest Rate</mat-label>
+              <input type="number" name="txtInterestRate" required id="txtInterestRate" #interestRate matInput formControlName="interestRate" />
+            </mat-form-field>
+
+            <mat-label class="label red">Loan Term (in years):</mat-label>
+
+            <mat-form-field fxFlex appearance="fill">
+              <mat-label>Loan Term</mat-label>
+              <input type="number" name="txtLoanTerm" required id="txtLoanTerm" #loanTerm matInput formControlName="loanTerm" />
+            </mat-form-field>
+
+            <button type="submit" [disabled]="!loanForm.valid" mat-raised-button color="warn" class="btn" (click)="calculatePayment(loanAmount.value, interestRate.value, loanTerm.value)">Calculate</button>
+
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div fxFlex>
+
+      <mat-card class="mat-elevation-z8 text-center">
+        <br><br>
+        <mat-card-title class="card-title red">Your monthly payment:</mat-card-title>
+        <mat-card-content class="resultsContainer">
+          <p id="monthlyPaymentTotal">
+            {{ monthlyPayment | currency }}
+          </p>
+        </mat-card-content>
+
+        <mat-card-title class="card-title red">Interest paid:</mat-card-title>
+        <mat-card-content class="resultsContainer">
+          <p id="interestPaidTotal">
+            {{ interestPaid | currency }}
+          </p>
+        </mat-card-content>
+        <br><br>
+      </mat-card>
+    </div>
+  </div>
+  <br><br>
+</mat-card>
